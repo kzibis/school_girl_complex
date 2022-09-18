@@ -4,7 +4,7 @@
 }
 
 h1 {
-    color: rgb(93, 93, 245);
+    color: rgb(166, 6, 190);
     font-size: 250%;
 }
 
@@ -21,6 +21,21 @@ header h1{
 
 body {
     margin:0; 
+}
+
+.box {
+    position: relative;
+}
+
+.box h1{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+box img{
+    display: block;
 }
 
 main {
