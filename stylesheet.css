@@ -1,33 +1,62 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
 h1 {
     color: rgb(93, 93, 245);
+    font-size: 250%;
+}
+
+header,footer  {
+    background-color: rgb(217, 125, 217)
 }
 
 header h1{
-    color: rgb(93, 93, 245);
-    border-bottom:double 4px rgb(177, 177, 247)
+    text-align: center;
+    color: rgb(166, 6, 190);
+    /* border-bottom:7px solid rgb(166, 6, 190); */
+    font-family: 'Homemade Apple', cursive;
+}
+
+body {
+    margin:0; 
 }
 
 main {
-    border-bottom:double 4px rgb(177, 177, 247)
+    border-bottom:double 4px rgb(217, 125, 217);
 }
 
-nav{
-    text-align: center;
-    border-bottom:double 4px rgb(177, 177, 247)
-}
-
-nav li{
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
     list-style: none;
-    display: inline-block;
-    width: 10%;
-    min-width: 90px;
 }
 
-nav li+li{
-    border-left: 1px solid #999;
+nav ul li {
+    width: 20%;
+    position: relative;
 }
 
-nav a:hover{
-    color:#6c6b86;
-    border-bottom:2px solid #6c6b86;
+nav ul li:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 80%;
+    border-left: 1px solid #c0a6ce;
+}
+
+nav ul li a {
+    background-color: #d633d9;
+    display: block;
+    padding: 0.5em 1em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
 }
