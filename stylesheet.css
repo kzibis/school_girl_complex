@@ -28,7 +28,7 @@ footer {
 footer ul li {
     display: flex;
 }
-footer ul li a, p{
+footer ul li a, footer ul li p{
     color: white;
     padding: 0px, 0px;
 
