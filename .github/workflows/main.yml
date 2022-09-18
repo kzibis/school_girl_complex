@@ -14,11 +14,11 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install Dependencies
-      run: |
+      run: 
         npm install
 
     - name: deploy to Heroku
-      run:
+      run: |
         git push heroku main
         heroku ps:scale web=1
         heroku open
