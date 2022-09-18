@@ -8,7 +8,7 @@ h1 {
     font-size: 250%;
 }
 
-header,footer  {
+header {
     background-color: rgb(217, 125, 217);
     padding: 0px 10px
 }
@@ -20,20 +20,23 @@ header h1{
     font-family: 'Homemade Apple', cursive;
 }
 
+footer {
+    background-color: rgb(70, 27, 5);
+    padding: 0px 10px
+}
 
 footer ul li {
     display: flex;
 }
-footer ul li a{
-    color: rgb(166, 6, 190);
-    font-family: 'Homemade Apple', cursive;
-    padding: 0px, 10px;
+footer ul li a, p{
+    color: white;
+    padding: 0px, 0px;
 
 }
 
 .icon {
-   width: 30px;
-   height: 30px; 
+   width: 40px;
+   height: 40px; 
 }
 
 body {
@@ -49,6 +52,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.box p{
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 40px;
 }
 
 .discography {
