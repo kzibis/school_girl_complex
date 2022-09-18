@@ -14,4 +14,4 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "shrouded-lake-16508"
-          heroku_email: ${{secrets.HEROKU?EMAIL}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
