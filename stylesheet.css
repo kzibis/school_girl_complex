@@ -9,7 +9,8 @@ h1 {
 }
 
 header,footer  {
-    background-color: rgb(217, 125, 217)
+    background-color: rgb(217, 125, 217);
+    padding: 0px 10px
 }
 
 header h1{
@@ -17,6 +18,22 @@ header h1{
     color: rgb(166, 6, 190);
     /* border-bottom:7px solid rgb(166, 6, 190); */
     font-family: 'Homemade Apple', cursive;
+}
+
+
+footer ul li {
+    display: flex;
+}
+footer ul li a{
+    color: rgb(166, 6, 190);
+    font-family: 'Homemade Apple', cursive;
+    padding: 0px, 10px;
+
+}
+
+.icon {
+   width: 30px;
+   height: 30px; 
 }
 
 body {
@@ -34,12 +51,9 @@ body {
     left: 0;
 }
 
-box img{
-    display: block;
-}
-
-main {
-    border-bottom:double 4px rgb(217, 125, 217);
+.discography {
+    margin: 0px 5px;
+    padding: 0px 5px;
 }
 
 nav ul {

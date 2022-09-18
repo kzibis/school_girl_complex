@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>my-portfolio</title>
-        <link rel="stylesheet" href="stylesheet.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(function(){
@@ -11,6 +10,9 @@
                 $('#footer').load('./common_files/footer.html');
             })
         </script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="./module/slider/slider.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     </head>
     <body>
         <div id="header"></div>
@@ -27,8 +29,18 @@
 
         <main>
             <h1>WORKS</h1>
-            <img src="./img/1FN2ta1g_400x400.jpeg">
-            <p>希 2022.4.2 digital release!!</p>
+            <span class="discography">
+                <ul class="slider">
+                    <li><img src="./img/1FN2ta1g_400x400.jpeg"><p>希 2022.4.2 digital release!!</p></li>
+                    <li><img src="./img/istockphoto-984996502-612x612.jpeg" alt=""></li>
+                    <li><img src="./img/istockphoto-984996502-612x612.jpeg" alt=""></li>
+                    <li><img src="./img/istockphoto-984996502-612x612.jpeg" alt=""></li>
+                    <li><img src="./img/istockphoto-984996502-612x612.jpeg" alt=""></li>
+                </ul>
+            </span>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="./module/slider/slider.js"></script>
         </main>
 
         <div id="footer"></div>
