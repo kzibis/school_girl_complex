@@ -1,0 +1,33 @@
+h1 {
+    color: rgb(93, 93, 245);
+}
+
+header h1{
+    color: rgb(93, 93, 245);
+    border-bottom:double 4px rgb(177, 177, 247)
+}
+
+main {
+    border-bottom:double 4px rgb(177, 177, 247)
+}
+
+nav{
+    text-align: center;
+    border-bottom:double 4px rgb(177, 177, 247)
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+}
+
+nav li+li{
+    border-left: 1px solid #999;
+}
+
+nav a:hover{
+    color:#6c6b86;
+    border-bottom:2px solid #6c6b86;
+}
