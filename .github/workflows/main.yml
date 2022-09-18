@@ -19,6 +19,11 @@ jobs:
 
     - name: deploy to Heroku
       run: |
+        heroku login
         git push heroku main
         heroku ps:scale web=1
         heroku open
+      env:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "application-name"
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
